@@ -10,7 +10,7 @@ Sockets Links.
 4. Send and receive the message using the send function in socket.
 ## PROGRAM
 ## CLIENT:
-```
+```py
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
@@ -20,7 +20,7 @@ while True:
  print("Server > ",s.recv(1024).decode())
 ```
 ## SERVER:
-```
+```py
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
